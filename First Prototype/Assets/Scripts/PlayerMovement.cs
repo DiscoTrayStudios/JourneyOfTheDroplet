@@ -211,7 +211,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2D.linearVelocity = new Vector2(3f, 0f);
         }
-
+        else
+        {
+            currentWalkSound.Stop();
+        }
         if (jumpedFromPad)
         {
             Debug.Log("I jumped from pad");
