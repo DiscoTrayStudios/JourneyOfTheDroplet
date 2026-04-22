@@ -49,7 +49,7 @@ public class ShootWater : MonoBehaviour
         pos = pos%201;
         if (Input.GetMouseButton(0))
         {
-            if (!pausepanel.activeInHierarchy && GameManager.Instance.playerWater > 0.001f)
+            if (!pausepanel.activeInHierarchy && GameManager.Instance.playerWater > 0.001f && GameManager.Instance.canMove == true)
             {
                 Shoot();
                 if (!audioSource.isPlaying)
