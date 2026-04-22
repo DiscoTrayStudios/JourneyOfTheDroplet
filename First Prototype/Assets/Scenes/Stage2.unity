@@ -3759,11 +3759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1763751363609313568, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.749975
       objectReference: {fileID: 0}
     - target: {fileID: 1763751363609313568, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1852774038164511733, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: panel
@@ -3775,23 +3775,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4392455252833395480, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.749975
       objectReference: {fileID: 0}
     - target: {fileID: 4392455252833395480, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5025349341041948913, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.749975
       objectReference: {fileID: 0}
     - target: {fileID: 5025349341041948913, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5025349341041948913, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.749975
       objectReference: {fileID: 0}
     - target: {fileID: 6397937480152572222, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: panel
@@ -3803,39 +3803,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547593807493969129, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6547593807493969129, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7504329424757049805, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504329424757049805, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8feaee43d1706fc46bd8bbf3b20b5f55, type: 3}
     - target: {fileID: 7547958094560447609, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7638377243409471166, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7638377243409471166, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7638377243409471166, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8061712691438772393, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.749975
       objectReference: {fileID: 0}
     - target: {fileID: 8061712691438772393, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8061712691438772393, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.749975
       objectReference: {fileID: 0}
     - target: {fileID: 8360861364458843319, guid: 703538ee66ddaf74384f8b83d9e31623, type: 3}
       propertyPath: m_Name
@@ -4456,8 +4464,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b324a4685d480b346b084e8a5dbacbde, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8feaee43d1706fc46bd8bbf3b20b5f55, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5417,6 +5425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstInteraction: 1
   repeatStartPosition: 3
+  AutoTalk: 0
   npcName: Dropert
   dialogueAsset: {fileID: 11400000, guid: cba3dc5452ca6604da1853528d1a7f98, type: 2}
 --- !u!212 &599744217
@@ -10770,8 +10779,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b324a4685d480b346b084e8a5dbacbde, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8feaee43d1706fc46bd8bbf3b20b5f55, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12083,6 +12092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstInteraction: 1
   repeatStartPosition: 3
+  AutoTalk: 0
   npcName: Dropert
   dialogueAsset: {fileID: 11400000, guid: b4e495a24ffa4644eb7ff60c53734ea9, type: 2}
 --- !u!212 &995441559
@@ -13205,7 +13215,6 @@ GameObject:
   - component: {fileID: 1320808708}
   - component: {fileID: 1320808707}
   - component: {fileID: 1320808718}
-  - component: {fileID: 1320808717}
   m_Layer: 5
   m_Name: PausePanel
   m_TagString: Untagged
@@ -13252,8 +13261,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b324a4685d480b346b084e8a5dbacbde, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8feaee43d1706fc46bd8bbf3b20b5f55, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -13301,36 +13310,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1320808717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320808705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b324a4685d480b346b084e8a5dbacbde, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1320808718
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -71864,6 +71843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstInteraction: 1
   repeatStartPosition: 3
+  AutoTalk: 0
   npcName: Dropert
   dialogueAsset: {fileID: 11400000, guid: a4bbdc1e8de86324387386831d991505, type: 2}
 --- !u!212 &1574484419
@@ -73478,6 +73458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstInteraction: 1
   repeatStartPosition: 3
+  AutoTalk: 0
   npcName: Dropert
   dialogueAsset: {fileID: 11400000, guid: c9c0fa1cfe56ec946813f94e7dc30045, type: 2}
 --- !u!212 &2050741357
