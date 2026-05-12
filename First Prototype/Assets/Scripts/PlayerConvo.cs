@@ -5,7 +5,7 @@ public class PlayerConvo : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip talkSound;
-    [SerializeField] float talkDistance = 1;
+    [SerializeField] float talkDistance = 2f;
     bool inConversation;
     bool firstConvo;
 
@@ -44,7 +44,7 @@ public class PlayerConvo : MonoBehaviour
 
     void Prompt(){
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, talkDistance, Vector2.up, 0, LayerMask.GetMask("NPC"));
-        if(!pausepanel.activeInHierarchy){
+        if(!pausepanel.activeInHierarchy && gameObject.GetComponent<PlayerMovement>().canDialogue()){
             if (hit)
             {
                 //Debug.Log("Hit Something!!" + hit.collider.gameObject.name);

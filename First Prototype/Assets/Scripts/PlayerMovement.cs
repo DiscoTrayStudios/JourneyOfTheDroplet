@@ -343,6 +343,10 @@ public class PlayerMovement : MonoBehaviour
                 }
     }
 
+    public bool canDialogue()
+    {
+        return m_Grounded;
+    }
     public void Landed() {
         if (enteredCave && everGrounded)
         {
