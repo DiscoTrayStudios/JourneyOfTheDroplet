@@ -19,7 +19,7 @@ public class PlayerConvo : MonoBehaviour
     } 
     void Update()
     {
-        Prompt();
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
@@ -41,20 +41,23 @@ public class PlayerConvo : MonoBehaviour
             pausepanel.SetActive(true);
         }
     }
-
-    void Prompt(){
-        RaycastHit2D hit = Physics2D.CircleCast(transform.position, talkDistance, Vector2.up, 0, LayerMask.GetMask("NPC"));
-        if(!pausepanel.activeInHierarchy && gameObject.GetComponent<PlayerMovement>().canDialogue()){
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Prompt(collision);
+    }
+    void Prompt(Collider2D hit){
+       // RaycastHit2D hit = Physics2D.CircleCast(transform.position, talkDistance, Vector2.up, 0, LayerMask.GetMask("NPC"));
+        if(!pausepanel.activeInHierarchy){
             if (hit)
             {
                 //Debug.Log("Hit Something!!" + hit.collider.gameObject.name);
 
-                if (hit.collider.gameObject.TryGetComponent(out NPC npc) && !inConversation)
+                if (hit.gameObject.TryGetComponent(out NPC npc) && !inConversation)
                 {
                     prompt.SetActive(true);
-                    if (hit.collider.gameObject.GetComponent<NPC>().notSpokenTo() == true )
+                    if (hit.gameObject.GetComponent<NPC>().notSpokenTo() == true )
                     {
-                        firstConvo = hit.collider.gameObject.GetComponent<NPC>().firstConvo();
+                        firstConvo = hit.gameObject.GetComponent<NPC>().firstConvo();
                         Interact();
                         prompt.SetActive(false);
                     }
